@@ -1,0 +1,31 @@
+{
+  "name": "smartboard-iot",
+  "version": "1.0.0",
+  "description": "A node server that serves the moves to an arduino board by calling the database.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "mad1ad",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.4.3",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/express": "^4.17.13",
+    "copy-webpack-plugin": "^9.0.1",
+    "ts-loader": "^9.2.5",
+    "typescript": "^5.1.6",
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
