@@ -1,14 +1,15 @@
-// src/server/index.ts
 import dotenv from 'dotenv';
 import express from 'express';
+import Cors from 'cors'
 import mongoose, {ConnectOptions} from 'mongoose';
-
+import boardRouter from './routers/board';
+import gameRouter from './routers/game';
 
 dotenv.config();
 
 // Constants
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 1414;
 const MONGO_URI = process.env.MONGODB_URI || ''
 
 // Database Connection
@@ -22,6 +23,14 @@ db.on('error', (e) => console.error(e, 'MongoDB connection error:'));
 db.once('open', () => {
   console.log('Connected to MongoDB');
 });
+
+// Middlewares
+app.use(Cors());
+app.use(express.json())
+
+
+app.use('/api/board', boardRouter);
+app.use('/api/game', gameRouter);
 
 
 // Routes

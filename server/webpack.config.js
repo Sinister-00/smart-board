@@ -1,9 +1,9 @@
-// webpack.config.js
 const path = require('path');
-const CopyPlugin = require('copy-webpack-plugin');
+var webpack = require('webpack');
 
 module.exports = {
-  entry: './src/server/index.ts',
+  mode: 'development',
+  entry: './index.ts',
   target: 'node',
   output: {
     filename: 'index.js',
@@ -11,22 +11,19 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.js'],
+    extensionAlias: {
+      '.js': ['.js', '.ts'],
+      '.cjs': ['.cjs', '.cts'],
+      '.mjs': ['.mjs', '.mts'],
+    },
   },
   module: {
-    rules: [
-      {
-        test: /\.ts$/,
-        use: 'ts-loader',
-        exclude: /node_modules/,
-      },
-    ],
+    rules: [{ test: /\.([cm]?ts|tsx)$/, loader: 'ts-loader' }],
   },
   externals: ['express', 'express-session'],
   plugins: [
-    new CopyPlugin({
-      patterns: [{ from: './src/views', to: 'views' }],
-    }),
     new webpack.DefinePlugin({
+      'typeof window': '"object"',
       'process.env': {
         PORT: JSON.stringify(process.env.PORT || 3000),
       },
