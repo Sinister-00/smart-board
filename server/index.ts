@@ -38,6 +38,10 @@ app.get('/', (req, res) => {
   res.send("Hello, SOrry to disappoint but there's no fun here!");
 });
 
+app.get('/ping', (req, res) => {
+  res.send("Teri ma chodi mai..?");
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
