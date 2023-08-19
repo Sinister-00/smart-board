@@ -1,0 +1,10 @@
+{
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/",
+  "/ping/route": "/ping",
+  "/board/ping/route": "/board/ping",
+  "/board/status/route": "/board/status",
+  "/game/register-board/route": "/game/register-board",
+  "/board/set-complete/route": "/board/set-complete",
+  "/game/send-move/route": "/game/send-move"
+}
