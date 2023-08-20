@@ -1,8 +1,5 @@
+import {NextResponse} from "next/server";
+
 export async function GET() {
-  return new Response('Ping', {
-    status: 200,
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-    }
-  })
+  return NextResponse.json({status: 200, data: 'pong'})
 }
