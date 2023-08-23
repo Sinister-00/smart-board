@@ -164,7 +164,7 @@ module.exports = require("url");
 
 /***/ }),
 
-/***/ 573:
+/***/ 9927:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -198,7 +198,7 @@ const tree = {
         '',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8159)), "/home/mad1ad/Downloads/Capstone/new_code/next_server/src/app/page.tsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8159)), "/home/mad1ad/Downloads/Capstone/smart-board/next-server/src/app/page.tsx"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3881))).default(props))],
     apple: [],
@@ -209,7 +209,7 @@ const tree = {
         }]
       },
         {
-        'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4053)), "/home/mad1ad/Downloads/Capstone/new_code/next_server/src/app/layout.tsx"],
+        'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4053)), "/home/mad1ad/Downloads/Capstone/smart-board/next-server/src/app/layout.tsx"],
 'not-found': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 5493, 23)), "next/dist/client/components/not-found-error"],
         metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3881))).default(props))],
@@ -221,7 +221,7 @@ const tree = {
       }
       ]
       }.children;
-const pages = ["/home/mad1ad/Downloads/Capstone/new_code/next_server/src/app/page.tsx"];
+const pages = ["/home/mad1ad/Downloads/Capstone/smart-board/next-server/src/app/page.tsx"];
 
 // @ts-expect-error - replaced by webpack/turbopack loader
 
@@ -253,7 +253,7 @@ const routeModule = new AppPageRouteModule({
 
 /***/ }),
 
-/***/ 2574:
+/***/ 7745:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 1232, 23));
@@ -265,7 +265,7 @@ Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_
 
 /***/ }),
 
-/***/ 1351:
+/***/ 6117:
 /***/ (() => {
 
 
@@ -376,7 +376,7 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [587,85], () => (__webpack_exec__(573)));
+var __webpack_exports__ = __webpack_require__.X(0, [587,85], () => (__webpack_exec__(9927)));
 module.exports = __webpack_exports__;
 
 })();

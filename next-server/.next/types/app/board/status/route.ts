@@ -1,4 +1,4 @@
-// File: /home/mad1ad/Downloads/Capstone/new_code/next_server/src/app/board/status/route.ts
+// File: /home/mad1ad/Downloads/Capstone/smart-board/next-server/src/app/board/status/route.ts
 import * as entry from '../../../../../src/app/board/status/route.js'
 import type { NextRequest } from 'next/server.js'
 

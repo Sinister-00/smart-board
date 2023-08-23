@@ -12,7 +12,7 @@ module.exports = require("os");
 
 /***/ }),
 
-/***/ 2035:
+/***/ 7322:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -100,7 +100,7 @@ async function GET(request) {
     }
 }
 
-;// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?page=%2Fboard%2Fping%2Froute&name=app%2Fboard%2Fping%2Froute&pagePath=private-next-app-dir%2Fboard%2Fping%2Froute.ts&appDir=%2Fhome%2Fmad1ad%2FDownloads%2FCapstone%2Fnew_code%2Fnext_server%2Fsrc%2Fapp&appPaths=%2Fboard%2Fping%2Froute&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!
+;// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?page=%2Fboard%2Fping%2Froute&name=app%2Fboard%2Fping%2Froute&pagePath=private-next-app-dir%2Fboard%2Fping%2Froute.ts&appDir=%2Fhome%2Fmad1ad%2FDownloads%2FCapstone%2Fsmart-board%2Fnext-server%2Fsrc%2Fapp&appPaths=%2Fboard%2Fping%2Froute&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!
 
 // @ts-ignore this need to be imported from next/dist to be external
 
@@ -119,7 +119,7 @@ const routeModule = new AppRouteRouteModule({
         filename: "route",
         bundlePath: "app/board/ping/route"
     },
-    resolvedPagePath: "/home/mad1ad/Downloads/Capstone/new_code/next_server/src/app/board/ping/route.ts",
+    resolvedPagePath: "/home/mad1ad/Downloads/Capstone/smart-board/next-server/src/app/board/ping/route.ts",
     nextConfigOutput,
     userland: route_namespaceObject
 });
@@ -199,7 +199,7 @@ const boardSchema = new external_mongoose_namespaceObject.Schema({
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [587,501,335], () => (__webpack_exec__(2035)));
+var __webpack_exports__ = __webpack_require__.X(0, [587,501,335], () => (__webpack_exec__(7322)));
 module.exports = __webpack_exports__;
 
 })();

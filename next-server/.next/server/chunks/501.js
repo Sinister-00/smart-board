@@ -7525,7 +7525,7 @@ Object.defineProperty(exports, "getNextPathnameInfo", ({
         return getNextPathnameInfo;
     }
 }));
-const _normalizelocalepath = __webpack_require__(7415);
+const _normalizelocalepath = __webpack_require__(6362);
 const _removepathprefix = __webpack_require__(7656);
 const _pathhasprefix = __webpack_require__(3676);
 function getNextPathnameInfo(pathname, options) {

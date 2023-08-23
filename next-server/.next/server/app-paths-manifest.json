@@ -3,8 +3,8 @@
   "/page": "app/page.js",
   "/ping/route": "app/ping/route.js",
   "/board/ping/route": "app/board/ping/route.js",
+  "/board/set-complete/route": "app/board/set-complete/route.js",
   "/board/status/route": "app/board/status/route.js",
   "/game/register-board/route": "app/game/register-board/route.js",
-  "/board/set-complete/route": "app/board/set-complete/route.js",
   "/game/send-move/route": "app/game/send-move/route.js"
 }
