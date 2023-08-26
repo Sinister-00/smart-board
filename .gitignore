@@ -1,3 +1,39 @@
-node_modules
-dist
-package-lock.json
+# Node.js and npm
+node_modules/
+npm-debug.log*
+yarn-error.log*
+yarn.lock
+
+# Build output
+/.next/
+/out/
+/build/
+/public/
+/.vercel/
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*~
+*.log
+
+
+# Next.js telemetry
+.next-telemetry.json
+
+# Custom server
+server/node_modules/
+server/dist/
+
+dist/
