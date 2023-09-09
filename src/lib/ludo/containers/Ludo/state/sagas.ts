@@ -13,6 +13,7 @@ import {Rolls} from '@server/lib/ludo/containers/Dice/state/interfaces';
 import {currentDieRollSelector} from '@server/lib/ludo/containers/Dice/state/selectors';
 import {WINNING_MOVES} from '@server/entities/ludo-constants';
 import {WalkwayPosition} from '@server/lib/ludo/state/interfaces';
+import staticData from './data.json'
 
 import {
   disqualifyCoin,
@@ -54,7 +55,8 @@ function* watchForGetInitialGameData() {
 }
 
 function* getInitialGameDataSaga() {
-  const data: IServerGameData = yield call(api.get, {url: '/initialGameData.json'});
+  // const data: IServerGameData = yield call(api.get, {url: '/initialGameData.json'});
+  const data = staticData as unknown as IServerGameData
   const basesArray = data.bases.map((base) => ({...base, spawnable: false}));
   const bases = mapByProperty(basesArray, 'ID');
   const coins = data.coins.map((coin) => ({...coin, color: bases[coin.baseID].color}));

@@ -1,5 +1,7 @@
 import cookieParser from 'cookie-parser'
 
+// ts not working
+
 import next from 'next'
 import http from 'http'
 import cors from 'cors';
@@ -33,6 +35,8 @@ const io = new Server<
   InterServerEvents,
   SocketData
 >(httpServer, socketOpts)
+
+const environment = process.env.env || 'dev'; // Replace 'dev' with your default environment
 
 nextApp.prepare().then(() => {
   //  =============== Socket Connection ===============

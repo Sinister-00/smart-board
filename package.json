@@ -12,9 +12,9 @@
     "build:next": "next build",
     "start:server": "node ./dist/server",
     "build:server": "ttsc --project tsconfig.server.json",
-    "build:local": "yarn clean && yarn build:next && yarn build:server",
-    "prepare:app": "yarn build:next && yarn build:server",
-    "start:app": "yarn clean && yarn prepare:app && yarn start:server"
+    "prepare:app": "yarn clean && yarn build:next && yarn build:server",
+    "start:app": "env-cmd -f .env.prod yarn start:server",
+    "local:app": "env-cmd -f .env yarn start:server"
   },
   "dependencies": {
     "autoprefixer": "10.4.15",
