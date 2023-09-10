@@ -36,8 +36,6 @@ const io = new Server<
   SocketData
 >(httpServer, socketOpts)
 
-const environment = process.env.env || 'dev'; // Replace 'dev' with your default environment
-
 nextApp.prepare().then(() => {
   //  =============== Socket Connection ===============
   io.on("connection", (socket) => {

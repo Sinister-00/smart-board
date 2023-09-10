@@ -1,0 +1,37 @@
+name: Omniboard CI
+
+on: [push]
+
+env:
+  AZURE_WEBAPP_NAME: omni-board
+  NODE_VERSION: '16.19'
+
+jobs:
+  build-and-deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout GitHub Action' 
+        uses: actions/checkout@main
+    
+      - uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          
+      - name: Setup Node ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: npm install, build, and test
+        run: |
+          npm install
+          npm run prepare:app 
+        working-directory: my-app-folder 
+
+      - name: 'Deploy to Azure WebApp'
+      uses: azure/webapps-deploy@v2
+      with: 
+        app-name: ${{ env.AZURE_WEBAPP_NAME }}
+        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+        package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
